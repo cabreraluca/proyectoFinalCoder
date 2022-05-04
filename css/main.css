@@ -253,3 +253,79 @@
         .contenedorPrincipalContacto .form div button {
           border-color: red;
           background-color: red; } }
+
+@media only screen and (max-width: 992px) {
+  .contenedorPrincipal {
+    grid-template-columns: repeat(4, 1);
+    grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipal .cabecera img {
+      height: 100%; }
+    .contenedorPrincipal .cabecera a {
+      display: flex;
+      justify-content: center; }
+    .contenedorPrincipal .cabecera nav div ul {
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera nav div ul a li {
+        font-size: 1rem; }
+    .contenedorPrincipal .cabecera .menu {
+      padding-left: 0;
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera .menu a {
+        display: flex;
+        justify-content: center;
+        padding: 0; }
+        .contenedorPrincipal .cabecera .menu a li {
+          font-size: 0.9rem; }
+    .contenedorPrincipal .imagenPrincipal {
+      padding-top: 3rem; }
+    .contenedorPrincipal .productos div:hover {
+      transform: none; }
+    .contenedorPrincipal .productos {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center; }
+    .contenedorPrincipal p {
+      font-size: 2rem; }
+  p {
+    text-align: center; }
+  .contenedorPrincipalContacto {
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipalContacto .cabecera img {
+      height: 100%; }
+    .contenedorPrincipalContacto .cabecera a {
+      display: flex;
+      justify-content: center; }
+    .contenedorPrincipalContacto .cabecera nav div ul {
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipalContacto .cabecera nav div ul a li {
+        font-size: 1rem; }
+    .contenedorPrincipalContacto .cabecera .menu {
+      padding-left: 0;
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipalContacto .cabecera .menu a {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px; }
+        .contenedorPrincipalContacto .cabecera .menu a li {
+          font-size: 0.9rem; }
+    .contenedorPrincipalContacto .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contenedorPrincipalContacto .form div {
+        padding: 10px;
+        width: 100%; }
+        .contenedorPrincipalContacto .form div button {
+          border-color: red;
+          background-color: red; } }

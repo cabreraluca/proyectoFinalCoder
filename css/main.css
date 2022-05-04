@@ -1,0 +1,255 @@
+.contenedorPrincipal .productos {
+  padding: 20px;
+  overflow: hidden;
+  text-align: center; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  width: 100%; }
+
+.contenedorPrincipal {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  height: 100vh;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+  .contenedorPrincipal .cabecera {
+    grid-area: header;
+    width: auto;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 2; }
+    .contenedorPrincipal .cabecera a {
+      width: 100%; }
+      .contenedorPrincipal .cabecera a img {
+        height: 100%;
+        width: 190px;
+        padding-top: 0px; }
+    .contenedorPrincipal .cabecera .menu {
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      padding-left: 180px; }
+      .contenedorPrincipal .cabecera .menu li {
+        width: 100%;
+        display: grid;
+        top: 0;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        color: white; }
+      .contenedorPrincipal .cabecera .menu a {
+        text-decoration: none; }
+  .contenedorPrincipal main {
+    grid-area: main; }
+  .contenedorPrincipal .imagenPrincipal {
+    grid-area: imagen;
+    margin-top: -50px;
+    padding-top: -60px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center; }
+  .contenedorPrincipal .ingresos {
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 50px; }
+  .contenedorPrincipal .productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    margin-top: 6vh;
+    text-align: center;
+    color: white; }
+    .contenedorPrincipal .productos div:hover {
+      transform: scale(1.1, 1.1);
+      transition: 0.3s; }
+  .contenedorPrincipal footer {
+    grid-area: footer;
+    margin-top: 30px;
+    text-align: center;
+    color: white; }
+  .contenedorPrincipal iframe {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center; }
+  .contenedorPrincipal .encontrarnos {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 50px; }
+  .contenedorPrincipal h1 {
+    text-align: center; }
+  .contenedorPrincipal .politicaH1 {
+    margin: 2rem; }
+  .contenedorPrincipal .politicaP {
+    text-align: center; }
+
+.contenedorPrincipalContacto {
+  width: 100%;
+  height: auto;
+  height: 100vh;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .contenedorPrincipalContacto .cabecera {
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 2; }
+    .contenedorPrincipalContacto .cabecera a {
+      width: auto;
+      height: 1.6rem;
+      padding-bottom: 0; }
+      .contenedorPrincipalContacto .cabecera a img {
+        height: 4rem;
+        width: 190px;
+        padding-top: 0px;
+        padding-bottom: 0; }
+    .contenedorPrincipalContacto .cabecera .menu {
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      padding-left: 90px;
+      padding-top: -150px; }
+      .contenedorPrincipalContacto .cabecera .menu li {
+        width: 100%;
+        display: grid;
+        top: 0;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        color: white; }
+      .contenedorPrincipalContacto .cabecera .menu a {
+        text-decoration: none; }
+  .contenedorPrincipalContacto main {
+    height: auto;
+    width: 100%;
+    grid-area: main; }
+    .contenedorPrincipalContacto main .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 25% 25% 25% 25%; }
+      .contenedorPrincipalContacto main .redes a {
+        width: auto;
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorPrincipalContacto main .redes a img {
+          height: 3rem;
+          width: 3rem; }
+    .contenedorPrincipalContacto main h1 {
+      margin-top: 0;
+      text-align: center; }
+  .contenedorPrincipalContacto footer {
+    grid-area: footer;
+    text-align: center; }
+  .contenedorPrincipalContacto .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .contenedorPrincipalContacto .form div {
+      padding: 10px;
+      width: 50%; }
+      .contenedorPrincipalContacto .form div button {
+        border-color: red;
+        background-color: red; }
+
+@media only screen and (max-width: 600px) {
+  .contenedorPrincipal {
+    grid-template-columns: repeat(4, 1);
+    grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipal .cabecera img {
+      height: 100%; }
+    .contenedorPrincipal .cabecera a {
+      display: flex;
+      justify-content: center; }
+    .contenedorPrincipal .cabecera nav div ul {
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera nav div ul a li {
+        font-size: 1rem; }
+    .contenedorPrincipal .cabecera .menu {
+      padding-left: 0;
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera .menu a {
+        display: flex;
+        justify-content: center;
+        padding: 0; }
+        .contenedorPrincipal .cabecera .menu a li {
+          font-size: 0.9rem; }
+    .contenedorPrincipal .imagenPrincipal {
+      padding-top: 3rem; }
+    .contenedorPrincipal .productos div:hover {
+      transform: none; }
+    .contenedorPrincipal .productos {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center; }
+    .contenedorPrincipal p {
+      font-size: 2rem; }
+  p {
+    text-align: center; }
+  .contenedorPrincipalContacto {
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipalContacto .cabecera img {
+      height: 100%; }
+    .contenedorPrincipalContacto .cabecera a {
+      display: flex;
+      justify-content: center; }
+    .contenedorPrincipalContacto .cabecera nav div ul {
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipalContacto .cabecera nav div ul a li {
+        font-size: 1rem; }
+    .contenedorPrincipalContacto .cabecera .menu {
+      padding-left: 0;
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipalContacto .cabecera .menu a {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px; }
+        .contenedorPrincipalContacto .cabecera .menu a li {
+          font-size: 0.9rem; }
+    .contenedorPrincipalContacto .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contenedorPrincipalContacto .form div {
+        padding: 10px;
+        width: 100%; }
+        .contenedorPrincipalContacto .form div button {
+          border-color: red;
+          background-color: red; } }

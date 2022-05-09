@@ -85,6 +85,9 @@
                                 text-align: center;
                                 color: $color-text;
                                 div{
+                                    img{
+                                        scale: (0.7);
+                                    }
                                    &:hover{
                                     transform: scale(1.1, 1.1);
                                     transition: 0.3s;
@@ -223,7 +226,8 @@
 
                         
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 992px){
     .contenedorPrincipal{
         grid-template-columns: repeat(4,1);
         grid-template-areas: "header header header header"
@@ -273,11 +277,11 @@
                              }
                             .productos{
                                 display: grid;
-                                grid-template-columns: 1fr;
+                                grid-template-columns: 1fr 1fr 1fr;
                                 text-align: center;
                              }
                              p{
-                                 font-size: 2rem;
+                                 font-size: 1.4rem;
                              }                            
                         }
                         p{
@@ -344,16 +348,18 @@
                                        
     }
 }
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 600px){
     .contenedorPrincipal{
+        height: 100vh;
         grid-template-columns: repeat(4,1);
         grid-template-areas: "header header header header"
                              "imagen imagen imagen imagen"
                              "main main main main"
                              "footer footer footer footer";
                              .cabecera{
+                                 
                                  img{
-                                     height: 100%;
+                                    margin: 2px;
                                  }
                                  a{
                                      display: flex;
@@ -381,7 +387,9 @@
                                          justify-content: center;
                                          padding: 0;
                                          li{
-                                             font-size: 0.9rem;
+                                             padding: 0;
+                                             margin: 15px;
+                                             font-size: 0.8rem;
                                          }
                                      }
                                  }
@@ -394,18 +402,30 @@
                              }
                             .productos{
                                 display: grid;
-                                grid-template-columns: 1fr;
+                                grid-template-columns: repeat(1, 3fr);
                                 text-align: center;
                              }
                              p{
                                  font-size: 2rem;
-                             }                            
+                             }  
+                             .politicaH1{
+                                 margin: 0;
+                                 text-decoration: underline 2px $color-secundario;
+                             }       
+                             .politicaP{
+                                 font-size: 1.3rem;
+                                 line-height: 1.8rem;
+                             }                                          
                         }
                         p{
                             text-align: center;
                         }
+                        footer{
+                            p{
+                                font-size: small;
+                            }
+                        }
     .contenedorPrincipalContacto{
-        @include size;
         height: 100vh;
         justify-content: center;
         display: grid;
@@ -414,19 +434,26 @@
                             "main main main main"
                             "footer footer footer footer";
                             .cabecera{
-                                img{
-                                    height: 100%;
-                                }
+                                min-height: 20vh;
+                                justify-content: center;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 100%;
                                 a{
+                                    height: min-content;
                                     display: flex;
                                     justify-content: center;
+                                    margin-top: 0;
                                 }
                                 nav{
                                     div{
+                                        padding-top: 0;
                                         ul{
                                             display: flex;
                                             justify-content: center;
                                             a{
+                                                padding: 0;
                                                 li{
                                                     font-size: 1rem;
                                                 }
@@ -443,9 +470,17 @@
                                         justify-content: center;
                                         padding-top: 10px;
                                         li{
+                                            padding: 0;
+                                            margin: 15px;
                                             font-size: 0.9rem;
                                         }
                                     }
+                                }
+                            }
+                            main{
+                                min-height: 70vh;
+                                .form{
+                                    min-height: auto;                             
                                 }
                             }
                             .form{
